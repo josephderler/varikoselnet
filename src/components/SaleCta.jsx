@@ -13,13 +13,13 @@ export default function SaleCta({ compact = false }) {
       <div className="relative flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-primary">
-            Alan adı satılık
+            Alan adları satılık
           </p>
           <h2
             id="satilik-baslik"
             className={`mt-2 font-serif font-medium tracking-tight text-foreground ${compact ? "text-2xl" : "text-3xl md:text-4xl"}`}
           >
-            varikosel.net sizin olabilir
+            varikosel.net ve varikosel.tr sizin olabilir
           </h2>
           <p className="mt-2 max-w-xl text-sm text-muted-foreground md:text-base">
             Fiyat teklifle belirlenir. Teklifinizi WhatsApp üzerinden{" "}

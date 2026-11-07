@@ -5,13 +5,11 @@
 import Sparkles from "./Sparkles.jsx";
 import { SITE } from "../site.js";
 
-const MUTED = ["varikosel.net"];
-const STRONG = ["satılık", "alan", "adı"];
-
+// Her satılık alan adı ayrı satırda (soluk), en altta "satılık" (vurgulu).
 function Headline() {
   const words = [
-    ...MUTED.map((w) => ({ w, muted: true })),
-    ...STRONG.map((w) => ({ w, muted: false })),
+    ...SITE.domainsForSale.map((w) => ({ w, muted: true })),
+    { w: "satılık", muted: false },
   ];
   return (
     <h1 className="max-w-2xl font-serif text-5xl font-medium leading-[1.04] tracking-tight sm:text-6xl md:text-7xl">
@@ -25,9 +23,7 @@ function Headline() {
             {w}
           </span>
         );
-        if (i === 0) return [el, <br key="br" />];
-        if (i < words.length - 1) return [el, " "];
-        return [el];
+        return i < words.length - 1 ? [el, " ", <br key={`br-${i}`} />] : [el];
       })}
     </h1>
   );
@@ -42,7 +38,7 @@ export default function Hero() {
           style={{ animationDelay: "300ms" }}
         >
           <span className="size-1.5 rounded-full bg-primary" aria-hidden="true" />
-          Alan adı satışta · Teklife açık
+          İki alan adı satışta · Teklife açık
         </span>
 
         <Headline />
@@ -51,9 +47,10 @@ export default function Hero() {
           className="anim-fade-in mt-2 max-w-2xl text-pretty text-base text-muted-foreground sm:text-lg"
           style={{ animationDelay: "800ms" }}
         >
-          Üroloji ve androloji klinikleri, hastaneler ve sağlık yayıncıları için
-          hastalığın adıyla birebir eşleşen, tek kelimelik bir alan adı. Fiyat
-          sabit değildir, teklifinizi WhatsApp üzerinden iletin.
+          Hastalığın adıyla birebir eşleşen iki alan adı: .net ve Türkiye'ye özel
+          .tr uzantısı. Üroloji ve androloji klinikleri, hastaneler ve sağlık
+          yayıncıları için. Fiyat sabit değildir, teklifinizi WhatsApp üzerinden
+          iletin.
         </p>
 
         <div

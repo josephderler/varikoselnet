@@ -8,8 +8,8 @@ const REASONS = [
     text: "Varikosel, hastalığın Türkçedeki adının kendisidir. Hastalar ve aileleri bilgi ararken bu kelimeyi yazar.",
   },
   {
-    title: "Kısa ve akılda kalıcı",
-    text: "Tek kelime, yazımı kolay. Telefonda söylendiğinde ya da kartvizitte görüldüğünde karışmaz.",
+    title: "İki uzantı: .net ve .tr",
+    text: "Tek kelime, yazımı kolay. Yaygın .net uzantısının yanında Türkiye'ye özel .tr uzantısı da satışta.",
   },
   {
     title: "Kimler için uygun?",
@@ -24,7 +24,7 @@ export default function Home() {
 
       <section aria-labelledby="neden" className="mx-auto max-w-6xl px-5 pt-8">
         <h2 id="neden" className="font-serif text-3xl font-medium tracking-tight text-foreground md:text-4xl">
-          Neden varikosel.net?
+          Neden varikosel.net ve varikosel.tr?
         </h2>
         <ul className="mt-8 grid gap-4 md:grid-cols-3">
           {REASONS.map((r) => (

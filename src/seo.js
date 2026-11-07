@@ -5,9 +5,9 @@ export const NOT_FOUND_PATH = "/404";
 export const ROUTES = ["/", ...ARTICLES.map((a) => `/${a.slug}`)];
 
 const HOME = {
-  title: "varikosel.net satılık alan adı · Varikosel bilgi rehberi",
+  title: "varikosel.net ve varikosel.tr satılık · Varikosel bilgi rehberi",
   description:
-    "varikosel.net alan adı satılıktır, teklifinizi WhatsApp ile iletin. Varikosel nedir, belirtileri, tanısı ve tedavisi hakkında kaynaklı, sade bilgilendirme.",
+    "varikosel.net ve varikosel.tr alan adları satılıktır, teklifinizi WhatsApp ile iletin. Varikosel nedir, belirtileri, tanısı ve tedavisi hakkında kaynaklı, sade bilgilendirme.",
 };
 
 function esc(s) {

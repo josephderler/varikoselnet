@@ -4,11 +4,13 @@ export const SITE = {
   name: "varikosel.net",
   updatedISO: "2026-11-07",
   updatedText: "7 Kasım 2026",
+  // Satılık alan adları (sitede birlikte gösterilir)
+  domainsForSale: ["varikosel.net", "varikosel.tr"],
   whatsappHandle: "@heryerdeyim",
   whatsappUrl:
     "https://wa.me/@heryerdeyim?text=" +
     encodeURIComponent(
-      "Merhaba, varikosel.net alan adı için teklif vermek istiyorum.",
+      "Merhaba, varikosel.net / varikosel.tr alan adları için teklif vermek istiyorum.",
     ),
 };
 

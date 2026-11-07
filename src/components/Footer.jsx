@@ -10,7 +10,8 @@ export default function Footer() {
             varikosel<span className="text-primary">.net</span>
           </a>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            Bu alan adı satılıktır. Teklif için WhatsApp:{" "}
+            varikosel.net ve varikosel.tr alan adları satılıktır. Teklif için
+            WhatsApp:{" "}
             <a
               href={SITE.whatsappUrl}
               target="_blank"
